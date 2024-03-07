@@ -1,12 +1,10 @@
 # pcml
 
-[![Travis](https://img.shields.io/travis/projectclarify/pcml.svg)](https://travis-ci.org/projectclarify/pcml)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
 
 Models and data generators toward developing the capacity to improve users' ability to self-regulate cognitive and emotional states.
 
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
-
-View these docs at [docs.cl4rify.org](https://docs.cl4rify.org).
+View docs at [docs.cl4rify.org](https://docs.cl4rify.org).
 
 ### Objectives and general strategy
 
