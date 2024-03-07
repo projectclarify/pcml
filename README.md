@@ -4,6 +4,10 @@
 
 Models and data generators toward developing the capacity to improve users' ability to self-regulate cognitive and emotional states.
 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.0%20adopted-ff69b4.svg)](code_of_conduct.md)
+
+View these docs at [docs.cl4rify.org](https://docs.cl4rify.org).
+
 ### Objectives and general strategy
 
 At the highest level, the above is to be accomplished by way of a feedback loop whereby a user's state is inferred from one or more modalities and a feedback action is chosen to aid in this task (e.g. play a tone when the user is looking stressed or distracted). For the time being this repository focuses on the state modeling aspect of this (excluding action selection). An intermediate waypoint of the project is to attain the ability to perform beyond state-of-the-art emotion and cognitive state recognition from video, audio, and neural-sensing modalities.
