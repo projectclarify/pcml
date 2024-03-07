@@ -1,0 +1,6 @@
+numpy
+jax==0.2.14
+jaxlib==0.1.67
+absl-py
+kubernetes
+git+https://github.com/google/flax@ccd36132030dbe60646af44f6c88aa058acc6390#egg=flax

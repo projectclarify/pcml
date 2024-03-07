@@ -1,0 +1,40 @@
+name: Test
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: [3.6, 3.7, 3.8]
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v2
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Set up Cloud SDK
+      uses: google-github-actions/setup-gcloud@master
+      with:
+        project_id: ${{ secrets.GCP_TEST_PROJECT_ID }}
+        service_account_key: ${{ secrets.GCP_TEST_SA_KEY }}
+        export_default_credentials: true
+    - name: Use gcloud CLI
+      run: gcloud info
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install .[test]
+    - name: Check style with YAPF
+      run: |
+        python tools/testing/check_yapf.py --path=antidote
+    - name: Start minikube
+      uses: medyagh/setup-minikube@master
+    - name: Try the cluster !
+      run: kubectl get pods -A
+    - name: Run batch tests
+      run: ANTIDOTE_WORKSPACE_ROOT=`pwd` pytest antidote
+

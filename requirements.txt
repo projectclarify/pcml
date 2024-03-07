@@ -1,0 +1,10 @@
+numpy==1.19.5
+jax==0.2.14
+jaxlib==0.1.67
+kubernetes==17.17.0
+absl-py==0.12.0
+git+https://github.com/google/flax@ccd36132030dbe60646af44f6c88aa058acc6390#egg=flax
+clu==0.0.4
+optax==0.0.8
+ml_collections
+tensorflow-text==2.5.0

@@ -1,0 +1,19 @@
+{
+  "name": "antidote-project-docs",
+  "version": "0.0.1",
+  "description": "Documentation for Antidote Project",
+  "main": "index.js",
+  "author": "Antidote Project Contributors",
+  "license": "Apache 2.0",
+  "private": false,
+  "devDependencies": {
+    "vuepress": "^1.8.2"
+  },
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
+  },
+  "dependencies": {
+    "@github/clipboard-copy-element": "^1.1.2"
+  }
+}
